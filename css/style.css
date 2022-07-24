@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -348,6 +349,24 @@ template {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
+  position: relative;
+}
+.header-menu__link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #171717;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+  transform-origin: left;
+}
+.header-menu__link:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.25s;
+  transform-origin: left;
 }
 
 .logo {
@@ -482,6 +501,7 @@ template {
 .card-globe:hover {
   box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5);
   transition: box-shadow 0.25s;
+  cursor: pointer;
 }
 .card-globe:hover .card-globe__image {
   filter: sepia(100%);
@@ -490,6 +510,7 @@ template {
 .card-insea:hover {
   box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5);
   transition: box-shadow 0.25s;
+  cursor: pointer;
 }
 .card-insea:hover .card-insea__image {
   filter: none;
@@ -498,6 +519,7 @@ template {
 .card-luxoft:hover {
   box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5);
   transition: box-shadow 0.25s;
+  cursor: pointer;
 }
 .card-luxoft:hover .card-luxoft__image {
   filter: none;
@@ -506,6 +528,7 @@ template {
 .card-sheridan:hover {
   box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5);
   transition: box-shadow 0.25s;
+  cursor: pointer;
 }
 .card-sheridan:hover .card-sheridan__image {
   filter: none;
@@ -514,6 +537,7 @@ template {
 .card-winestyle:hover {
   box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5);
   transition: box-shadow 0.25s;
+  cursor: pointer;
 }
 .card-winestyle:hover .card-winestyle__image {
   filter: none;
@@ -575,6 +599,7 @@ template {
 
 .stages {
   padding: 160px 0;
+  overflow: hidden;
 }
 .stages__tittle {
   margin: 0 0 80px 0;
@@ -583,6 +608,12 @@ template {
   font-size: 100px;
   line-height: 117px;
   text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-animation: marquee 25s infinite linear;
+          animation: marquee 25s infinite linear;
+}
+.stages__tittle:after {
+  content: "СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ";
 }
 .stages-wrapper {
   position: relative;
@@ -621,6 +652,23 @@ template {
   margin: 0 0 25px 0;
 }
 
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .footer {
   padding: 0 0 40px 0;
 }

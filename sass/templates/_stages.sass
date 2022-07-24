@@ -1,5 +1,6 @@
 .stages
     padding: 160px 0
+    overflow: hidden
     &__tittle
         margin: 0 0 80px 0
         font-style: normal
@@ -7,6 +8,10 @@
         font-size: 100px
         line-height: 117px
         text-transform: uppercase
+        white-space: nowrap
+        animation: marquee 25s infinite linear
+    &__tittle:after
+        content: "СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ"
     &-wrapper
         position: relative
         display: flex
@@ -39,4 +44,10 @@
             width: 600px
             height: 310px
             margin: 0 0 25px 0
+            
+@keyframes marquee 
+    0%
+        transform: translateX(0)
+    100%
+        transform: translateX(-100%)
         
