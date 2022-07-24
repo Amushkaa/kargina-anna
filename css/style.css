@@ -420,7 +420,6 @@ template {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
-  filter: blur(1px);
 }
 .card-insea {
   position: relative;
@@ -437,7 +436,7 @@ template {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
-  filter: blur(1px) grayscale(100%);
+  filter: grayscale(100%);
 }
 .card-luxoft {
   grid-column: 1;
@@ -451,7 +450,7 @@ template {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
-  filter: blur(1px) brightness(2) grayscale(100%);
+  filter: brightness(2) grayscale(100%);
 }
 .card-sheridan {
   grid-column: 2;
@@ -463,7 +462,7 @@ template {
   height: 154px;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: blur(1px) grayscale(100%);
+  filter: grayscale(100%);
 }
 .card-winestyle {
   grid-column: 1/3;
@@ -478,24 +477,83 @@ template {
   height: 154px;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: blur(1px) grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .card:hover {
   box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5);
+  transition: box-shadow 0.25s;
 }
 .card:hover .card-globe__image {
-  filter: none;
+  filter: sepia(100%);
+  transition: filter 0.25s;
 }
 .card:hover .card-insea__image {
   filter: none;
+  transition: filter 0.25s;
 }
 .card:hover .card-luxoft__image {
   filter: none;
+  transition: filter 0.25s;
 }
 .card:hover .card-sheridan__image {
   filter: none;
+  transition: filter 0.25s;
 }
 .card:hover .card-winestyle__image {
   filter: none;
+  transition: filter 0.25s;
+}
+
+.about {
+  background-color: #171717;
+  color: #FFFFFF;
+}
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 50px 0;
+}
+.about__text {
+  max-width: 500px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.about-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  color: #FFFFFF;
+  width: 406px;
+}
+.about-links__link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+.about-links__link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(1);
+  transition: transform 0.25s;
+  transform-origin: left;
+}
+.about-links__link:hover:before {
+  transform: scaleX(0);
+  transition: transform 0.25s;
+  transform-origin: left;
 }/*# sourceMappingURL=style.css.map */

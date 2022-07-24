@@ -37,7 +37,6 @@
             height: 169px
             object-fit: cover
             object-position: bottom
-            filter: blur(1px)
     &-insea
         position: relative
         grid-column: 2
@@ -50,7 +49,7 @@
             height: 142px
             object-fit: cover
             object-position: bottom
-            filter: blur(1px) grayscale(100%)
+            filter: grayscale(100%)
     &-luxoft
         grid-column: 1
         grid-row: 3 / 4
@@ -60,7 +59,7 @@
             height: 134px
             object-fit: cover
             object-position: bottom
-            filter: blur(1px) brightness(2) grayscale(100%)
+            filter: brightness(2) grayscale(100%)
     &-sheridan
         grid-column: 2
         grid-row: 2 / 4
@@ -69,7 +68,7 @@
             width: 314px
             height: 154px
             object-fit: cover
-            filter: blur(1px) grayscale(100%)
+            filter: grayscale(100%)
     &-winestyle
         grid-column: 1 / 3
         grid-row: 4 / 5
@@ -81,22 +80,28 @@
             width: 314px
             height: 154px
             object-fit: cover
-            filter: blur(1px) grayscale(100%)
+            filter: grayscale(100%)
 .card:hover
     box-shadow: 2px 2px 8px rgba(57, 57, 57, 0.5)
+    transition: box-shadow 0.25s
     .card
         &-globe
             &__image
-                filter: none
+                filter: sepia(100%)
+                transition: filter 0.25s
         &-insea
             &__image
                 filter: none
+                transition: filter 0.25s
         &-luxoft
             &__image
                 filter: none
+                transition: filter 0.25s
         &-sheridan
             &__image
                 filter: none
+                transition: filter 0.25s
         &-winestyle
             &__image
                 filter: none
+                transition: filter 0.25s
