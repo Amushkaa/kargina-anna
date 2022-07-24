@@ -413,7 +413,7 @@ template {
           animation: marquee 20s infinite linear;
 }
 .cover__tittle-back:after {
-  content: " Проекты / Проекты / Проекты / Проекты /";
+  content: "Проекты / Проекты / Проекты / Проекты /";
   color: #171717;
   position: absolute;
 }
@@ -439,7 +439,7 @@ template {
           animation: marquee 20s infinite linear;
 }
 .cover__tittle-up:after {
-  content: " Проекты / Проекты / Проекты / Проекты /";
+  content: "Проекты / Проекты / Проекты / Проекты /";
   color: #FFFFFF;
   position: absolute;
 }
@@ -464,13 +464,21 @@ template {
   top: 50px;
   transform: translateX(-50%);
 }
-.cover .swiper-pagination {
+
+.swiper-pagination {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 5px;
+  top: 460px;
+}
+.swiper-pagination-bullet {
   width: 205px;
-  background-color: #5A5A5A;
+  height: 5px;
+  background: #BEBEBE;
+  border-radius: 0;
+  opacity: 100%;
+}
+.swiper-pagination-bullet-active {
+  background: #5A5A5A;
+  opacity: 100%;
 }
 
 .projects {

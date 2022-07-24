@@ -18,7 +18,7 @@
             white-space: nowrap
             animation: marquee 20s infinite linear
         &-back:after
-            content: " Проекты / Проекты / Проекты / Проекты /"
+            content: "Проекты / Проекты / Проекты / Проекты /"
             color: $text-color
             position: absolute
     &-wrapper
@@ -41,7 +41,7 @@
             color: $background-color
             animation: marquee 20s infinite linear
         &-up:after
-            content: " Проекты / Проекты / Проекты / Проекты /"
+            content: "Проекты / Проекты / Проекты / Проекты /"
             color: $background-color
             position: absolute
     .swiper
@@ -62,14 +62,17 @@
             border-radius: 25px
             left: 50%
             top: 50px
-            transform: translateX(-50%)        
-        &-pagination
-            position: absolute
-            left: 50%
             transform: translateX(-50%)
-            height: 5px
-            width: 205px
-            background-color: #5A5A5A
-
-
+.swiper-pagination
+    position: absolute
+    top: 460px
+    &-bullet
+        width: 205px
+        height: 5px
+        background: #BEBEBE
+        border-radius: 0
+        opacity: 100%
+        &-active
+            background: #5A5A5A
+            opacity: 100%
 
