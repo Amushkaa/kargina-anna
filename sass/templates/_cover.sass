@@ -1,0 +1,45 @@
+.cover
+    padding: 50px 0 0 0
+    overflow: hidden
+    height: 600px
+    position: relative
+    &__tittle
+        &-back
+            position: absolute
+            margin: 0
+            top: 48.8%
+            z-index: -1
+            color: $text-color
+            font-style: normal
+            font-weight: 500
+            font-size: 100px
+            line-height: 117px
+            text-transform: uppercase
+            white-space: nowrap
+            animation: marquee 20s infinite linear
+        &-back:after
+            content: " Проекты / Проекты / Проекты / Проекты /"
+            color: $text-color
+            position: absolute
+    &-wrapper
+        background-color: $text-color
+        height: 600px
+        display: flex
+        align-items: center
+        overflow: hidden
+    &__tittle
+        &-up
+            transform: translateY(-50%)
+            margin: 0
+            font-style: normal
+            font-weight: 500
+            font-size: 100px
+            line-height: 117px
+            text-transform: uppercase
+            white-space: nowrap
+            color: $background-color
+            animation: marquee 20s infinite linear
+        &-up:after
+            content: " Проекты / Проекты / Проекты / Проекты /"
+            color: $background-color
+            position: absolute

@@ -391,6 +391,58 @@ template {
   line-height: 140.62%;
 }
 
+.cover {
+  padding: 50px 0 0 0;
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+.cover__tittle-back {
+  position: absolute;
+  margin: 0;
+  top: 48.8%;
+  z-index: -1;
+  color: #171717;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 117px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-animation: marquee 20s infinite linear;
+          animation: marquee 20s infinite linear;
+}
+.cover__tittle-back:after {
+  content: " Проекты / Проекты / Проекты / Проекты /";
+  color: #171717;
+  position: absolute;
+}
+.cover-wrapper {
+  background-color: #171717;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.cover__tittle-up {
+  transform: translateY(-50%);
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 117px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #FFFFFF;
+  -webkit-animation: marquee 20s infinite linear;
+          animation: marquee 20s infinite linear;
+}
+.cover__tittle-up:after {
+  content: " Проекты / Проекты / Проекты / Проекты /";
+  color: #FFFFFF;
+  position: absolute;
+}
+
 .projects {
   padding: 100px 0;
 }
@@ -613,7 +665,7 @@ template {
           animation: marquee 20s infinite linear;
 }
 .stages__tittle:after {
-  content: "СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ /";
+  content: " СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ /";
 }
 .stages-wrapper {
   position: relative;
@@ -654,7 +706,7 @@ template {
 
 @-webkit-keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(-20%);
   }
   100% {
     transform: translateX(-100%);
@@ -663,7 +715,7 @@ template {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(-20%);
   }
   100% {
     transform: translateX(-100%);
