@@ -1,0 +1,105 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+.projects
+    padding: 100px 0
+    &-wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 25px
+        grid-template-rows: 364px 101px 370px 355px
+.card
+    &-stages
+        &-left
+            max-width: 470px
+            margin: 0 0 25px 0
+        &-right
+            max-width: 470px
+            margin: 0 0 25px 0
+@media (max-width: 992px)
+    .container
+        max-width: 700px
+    .cover
+        padding: 50px 0 0 0
+        height: 700px
+        &__tittle
+            &-back
+                top: 100px
+        &-wrapper
+            height: 700px
+            position: relative
+        &__tittle
+            &-up
+                position: absolute
+                top: 50px
+        .swiper
+            width: 487px
+            height: 244px
+            left: 50%
+            &__back
+                position: absolute
+                width: 523px
+                height: 280px
+                left: 50%
+                top: 210px
+                transform: translateX(-50%)
+        .swiper-pagination
+            top: 550px
+            &-bullet
+                max-width: 167px
+    .projects
+        padding: 80px 0 160px 0
+        &-wrapper
+            grid-template-columns: repeat(5, 100%)
+            grid-gap: 25px
+            grid-template-rows: repeat(5,400px)
+        .card
+            position: relative
+            &__text
+                position: absolute
+                right: 30px
+                bottom: 30px
+            &-globe
+                grid-row: 1 
+                grid-column: 1
+                height: 400px
+                &__image
+                    margin: 30px 0 0 0
+                    width: 254px
+                    height: 169px
+                    object-fit: cover
+                    object-position: bottom
+            &-insea
+                grid-column: 1
+                grid-row: 2
+                height: 400px
+                &__image
+                    left: 25px
+                    bottom: 25px
+            &-luxoft
+                grid-column: 1
+                grid-row: 4
+                height: 400px
+            &-sheridan
+                grid-column: 1
+                grid-row: 3
+                height: 400px
+            &-winestyle
+                grid-column: 1
+                grid-row: 5
+                height: 400px
+                &__image
+                    left: 25px
+                    bottom: 25px
+    .about
+        &__text
+            max-width: 600px
+        &-links
+            margin-top: 50px    
+    .stages
+        .card
+            &-stages
+                &-left
+                    min-width: 100%
+                &-right
+                    min-width: 100%

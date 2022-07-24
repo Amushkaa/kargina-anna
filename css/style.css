@@ -643,6 +643,7 @@ template {
   justify-content: space-between;
   align-content: center;
   padding: 50px 0;
+  flex-wrap: wrap;
 }
 .about__text {
   max-width: 500px;
@@ -732,13 +733,13 @@ template {
   margin: 10px 0 0 0;
 }
 .card-stages-left {
-  width: 575px;
-  height: 310px;
+  max-width: 575px;
+  min-height: 310px;
   margin: 0 0 25px 0;
 }
 .card-stages-right {
-  width: 600px;
-  height: 310px;
+  max-width: 600px;
+  min-height: 310px;
   margin: 0 0 25px 0;
 }
 
@@ -780,4 +781,138 @@ template {
   font-size: 16px;
   line-height: 23px;
   max-width: 155px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+.projects {
+  padding: 100px 0;
+}
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-rows: 364px 101px 370px 355px;
+}
+
+.card-stages-left {
+  max-width: 470px;
+  margin: 0 0 25px 0;
+}
+.card-stages-right {
+  max-width: 470px;
+  margin: 0 0 25px 0;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .cover {
+    padding: 50px 0 0 0;
+    height: 700px;
+  }
+  .cover__tittle-back {
+    top: 100px;
+  }
+  .cover-wrapper {
+    height: 700px;
+    position: relative;
+  }
+  .cover__tittle-up {
+    position: absolute;
+    top: 50px;
+  }
+  .cover .swiper {
+    width: 487px;
+    height: 244px;
+    left: 50%;
+  }
+  .cover .swiper__back {
+    position: absolute;
+    width: 523px;
+    height: 280px;
+    left: 50%;
+    top: 210px;
+    transform: translateX(-50%);
+  }
+  .cover .swiper-pagination {
+    top: 550px;
+  }
+  .cover .swiper-pagination-bullet {
+    max-width: 167px;
+  }
+  .projects {
+    padding: 80px 0 160px 0;
+  }
+  .projects-wrapper {
+    grid-template-columns: repeat(5, 100%);
+    grid-gap: 25px;
+    grid-template-rows: repeat(5, 400px);
+  }
+  .projects .card {
+    position: relative;
+  }
+  .projects .card__text {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+  .projects .card-globe {
+    grid-row: 1;
+    grid-column: 1;
+    height: 400px;
+  }
+  .projects .card-globe__image {
+    margin: 30px 0 0 0;
+    width: 254px;
+    height: 169px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .projects .card-insea {
+    grid-column: 1;
+    grid-row: 2;
+    height: 400px;
+  }
+  .projects .card-insea__image {
+    left: 25px;
+    bottom: 25px;
+  }
+  .projects .card-luxoft {
+    grid-column: 1;
+    grid-row: 4;
+    height: 400px;
+  }
+  .projects .card-sheridan {
+    grid-column: 1;
+    grid-row: 3;
+    height: 400px;
+  }
+  .projects .card-winestyle {
+    grid-column: 1;
+    grid-row: 5;
+    height: 400px;
+  }
+  .projects .card-winestyle__image {
+    left: 25px;
+    bottom: 25px;
+  }
+  .about__text {
+    max-width: 600px;
+  }
+  .about-links {
+    margin-top: 50px;
+  }
+  .stages .card-stages-left {
+    min-width: 100%;
+  }
+  .stages .card-stages-right {
+    min-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
