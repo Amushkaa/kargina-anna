@@ -423,6 +423,7 @@ template {
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 .cover__tittle-up {
   transform: translateY(-50%);
@@ -441,6 +442,35 @@ template {
   content: " Проекты / Проекты / Проекты / Проекты /";
   color: #FFFFFF;
   position: absolute;
+}
+.cover .swiper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 600px;
+  height: 300px;
+}
+.cover .swiper__back {
+  position: absolute;
+  z-index: 2;
+  width: 644px;
+  height: 344px;
+  background-color: #171717;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+.cover .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 205px;
+  background-color: #5A5A5A;
 }
 
 .projects {
