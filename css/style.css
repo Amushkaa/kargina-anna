@@ -609,11 +609,11 @@ template {
   line-height: 117px;
   text-transform: uppercase;
   white-space: nowrap;
-  -webkit-animation: marquee 25s infinite linear;
-          animation: marquee 25s infinite linear;
+  -webkit-animation: marquee 20s infinite linear;
+          animation: marquee 20s infinite linear;
 }
 .stages__tittle:after {
-  content: "СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ";
+  content: "СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ /";
 }
 .stages-wrapper {
   position: relative;
