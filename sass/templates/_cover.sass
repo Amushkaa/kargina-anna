@@ -3,6 +3,17 @@
     overflow: hidden
     height: 600px
     position: relative
+    &__back
+        position: absolute
+        z-index: 2
+        width: 644px
+        height: 344px
+        background-color: $text-color
+        border: 2px solid #FFFFFF
+        border-radius: 25px
+        left: 50%
+        top: 50px
+        transform: translateX(-50%)
     &__tittle
         &-back
             position: absolute
@@ -52,17 +63,6 @@
         z-index: 3
         width: 600px
         height: 300px
-        &__back
-            position: absolute
-            z-index: 2
-            width: 644px
-            height: 344px
-            background-color: $text-color
-            border: 2px solid #FFFFFF
-            border-radius: 25px
-            left: 50%
-            top: 50px
-            transform: translateX(-50%)
 .swiper-pagination
     position: absolute
     top: 460px

@@ -8,20 +8,27 @@
         grid-template-columns: 1fr 1fr
         grid-gap: 25px
         grid-template-rows: 364px 101px 370px 355px
-.card
-    &-stages
-        &-left
-            max-width: 470px
-            margin: 0 0 25px 0
-        &-right
-            max-width: 470px
-            margin: 0 0 25px 0
+    .card
+        &-stages
+            &-left
+                max-width: 470px
+                margin: 0 0 25px 0
+            &-right
+                width: 470px
+                margin: 0 0 25px 0
 @media (max-width: 992px)
     .container
         max-width: 700px
     .cover
         padding: 50px 0 0 0
         height: 700px
+        &__back
+            position: absolute
+            width: 523px
+            height: 280px
+            left: 50%
+            top: 210px
+            transform: translateX(-50%)
         &__tittle
             &-back
                 top: 100px
@@ -36,13 +43,6 @@
             width: 487px
             height: 244px
             left: 50%
-            &__back
-                position: absolute
-                width: 523px
-                height: 280px
-                left: 50%
-                top: 210px
-                transform: translateX(-50%)
         .swiper-pagination
             top: 550px
             &-bullet
