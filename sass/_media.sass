@@ -112,12 +112,42 @@
     .container
         max-width: 576px
     .header
-        &-menu
-            min-width: 0
-            &--mobile_visible
+        &--fixed
+            position: fixed
+            top: 0
+            right: 0
+            left: 0
+            z-index: 80
+            padding-bottom: 30px
+        &-right
+            display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 90px
+            background: $background-color
+            width: 100%
+            z-index: 99
+            overflow-y: hidden
+            &--visible
                 display: block
-            &--mobile_hidden
-                display: none
+        &-menu
+            &__mobile
+                display: block
+            flex-direction: column
+            margin-top: 180px
+            &__item
+                margin-bottom: 20px
+            &__button
+                display: block
+                min-width: 0
+                &--hidden
+                    display: none
+            &__close
+                &--visible
+                    display: block
+                    z-index: 100
 @media (max-width: 576px)
     .container
         max-width: 92%
