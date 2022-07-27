@@ -133,21 +133,22 @@
             &--visible
                 display: block
         &-menu
-            &__mobile
+            &-mobile
                 display: block
-            flex-direction: column
-            margin-top: 180px
+                flex-direction: column
+                margin-top: 180px
+                &__button
+                    display: block
+                    min-width: 0
+                    &--hidden
+                        display: none
+                &__close
+                    &--visible
+                        display: block
+                        z-index: 100
             &__item
                 margin-bottom: 20px
-            &__button
-                display: block
-                min-width: 0
-                &--hidden
-                    display: none
-            &__close
-                &--visible
-                    display: block
-                    z-index: 100
+
 @media (max-width: 576px)
     .container
         max-width: 92%
@@ -168,7 +169,6 @@
             display: none
     .projects
         padding: 0 0 160px 0
-        &-wrapper
         .card
             position: relative
             &__tittle
