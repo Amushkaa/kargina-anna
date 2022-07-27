@@ -1123,7 +1123,7 @@ template {
     display: none;
   }
   .projects {
-    padding: 0 0 160px 0;
+    padding: 80px 0 160px 0;
   }
   .projects .card {
     position: relative;
