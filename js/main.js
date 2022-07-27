@@ -12,11 +12,11 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const menuButton = document.querySelector(".header-menu__mobile")
+const menuButton = document.querySelector(".header-menu-mobile")
 menuButton.addEventListener('click', function() {
   document.querySelector ('.header-right').classList.toggle("header-right--visible");
-  document.querySelector ('.header-menu__close').classList.toggle("header-menu__close--visible");
-  document.querySelector ('.header-menu__button').classList.toggle("header-menu__button--hidden");
+  document.querySelector ('.header-menu-mobile__close').classList.toggle("header-menu-mobile__close--visible");
+  document.querySelector ('.header-menu-mobile__button').classList.toggle("header-menu-mobile__button--hidden");
   document.querySelector ('.header').classList.toggle("header--fixed");
 
 });

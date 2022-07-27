@@ -19,14 +19,24 @@
             &-right
                 width: 470px
                 margin: 0 0 25px 0
+    .choice
+        &-container
+            max-width: 960px
+        &-wrapper
+            margin: 0
+        &__image
+            display: none
+        &__tittle
+            margin-left: 0px
 @media (max-width: 992px)
     .container
         max-width: 700px
+    .choice
+        &-container
+            max-width: 700px
     .cover
         &-container
             max-width: 700px
-        padding: 50px 0 0 0
-        height: 700px
         &__back
             position: absolute
             width: 523px
@@ -108,9 +118,23 @@
                     min-width: 100%
                 &-right
                     min-width: 100%
+    .choice
+        &-wrapper
+            margin: 0
+        &__image
+            display: none
 @media (max-width: 768px)
     .container
         max-width: 576px
+    .choice
+        &-container
+            max-width: 576px
+        &__arrow
+            display: none
+        &-line
+            margin-bottom: 30px
+        &__tittle
+            word-wrap: break-word
     .header
         &--fixed
             position: fixed
@@ -133,10 +157,11 @@
             &--visible
                 display: block
         &-menu
+            margin-top: 180px
+            flex-direction: column
             &-mobile
-                display: block
+                display: flex
                 flex-direction: column
-                margin-top: 180px
                 &__button
                     display: block
                     min-width: 0
@@ -152,6 +177,11 @@
 @media (max-width: 576px)
     .container
         max-width: 92%
+    .choice
+        &-container
+            max-width: 92%
+        &__tittle
+            word-wrap: break-word
     .header
         .logo
             flex-direction: column

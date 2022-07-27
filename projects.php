@@ -1,6 +1,6 @@
 <?php include ('header.php')?>
 <div class="choice">
-    <div class="container">
+    <div class="choice-container">
         <div class="choice-wrapper">
             <div class="choice-line choice-line__luxoft">
                 <img src="img/projects/luxoft.png" alt="Image: Luxoft" class="choice__image">

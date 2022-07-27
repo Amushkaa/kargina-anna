@@ -812,6 +812,10 @@ template {
   flex-direction: column;
   justify-content: space-around;
 }
+.choice-container {
+  max-width: 1200px;
+  margin: auto;
+}
 .choice__arrow {
   opacity: 0;
   transform: scaleX(0);
@@ -825,15 +829,12 @@ template {
   transform-origin: left;
 }
 .choice-wrapper {
-  margin: 0 0 0 357px;
+  margin: 0 0 0 356px;
 }
 .choice-line {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-}
-.choice-line-image__luxoft {
-  display: none;
 }
 .choice-line:hover .choice__arrow {
   opacity: 1;
@@ -901,14 +902,25 @@ template {
     width: 470px;
     margin: 0 0 25px 0;
   }
+  .choice-container {
+    max-width: 960px;
+  }
+  .choice-wrapper {
+    margin: 0;
+  }
+  .choice__image {
+    display: none;
+  }
+  .choice__tittle {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
   }
-  .cover {
-    padding: 50px 0 0 0;
-    height: 700px;
+  .choice-container {
+    max-width: 700px;
   }
   .cover-container {
     max-width: 700px;
@@ -1013,10 +1025,28 @@ template {
   .stages .card-stages-right {
     min-width: 100%;
   }
+  .choice-wrapper {
+    margin: 0;
+  }
+  .choice__image {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+  }
+  .choice-container {
+    max-width: 576px;
+  }
+  .choice__arrow {
+    display: none;
+  }
+  .choice-line {
+    margin-bottom: 30px;
+  }
+  .choice__tittle {
+    word-wrap: break-word;
   }
   .header--fixed {
     position: fixed;
@@ -1041,10 +1071,13 @@ template {
   .header-right--visible {
     display: block;
   }
-  .header-menu-mobile {
-    display: block;
-    flex-direction: column;
+  .header-menu {
     margin-top: 180px;
+    flex-direction: column;
+  }
+  .header-menu-mobile {
+    display: flex;
+    flex-direction: column;
   }
   .header-menu-mobile__button {
     display: block;
@@ -1064,6 +1097,12 @@ template {
 @media (max-width: 576px) {
   .container {
     max-width: 92%;
+  }
+  .choice-container {
+    max-width: 92%;
+  }
+  .choice__tittle {
+    word-wrap: break-word;
   }
   .header .logo {
     flex-direction: column;
