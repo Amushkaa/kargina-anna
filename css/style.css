@@ -403,6 +403,10 @@ template {
   height: 600px;
   position: relative;
 }
+.cover-container {
+  max-width: 1200px;
+  margin: auto;
+}
 .cover__back {
   position: absolute;
   z-index: 2;
@@ -706,8 +710,8 @@ template {
   line-height: 117px;
   text-transform: uppercase;
   white-space: nowrap;
-  -webkit-animation: marquee 20s infinite linear;
-          animation: marquee 20s infinite linear;
+  -webkit-animation: marquee 10s infinite linear;
+          animation: marquee 10s infinite linear;
 }
 .stages__tittle:after {
   content: " СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ / СТАДИИ /";
@@ -730,6 +734,12 @@ template {
   z-index: -1;
 }
 
+.card-up {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .card__name {
   font-style: normal;
   font-weight: 500;
@@ -772,6 +782,7 @@ template {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -791,6 +802,9 @@ template {
 
 @media (max-width: 1200px) {
   .container {
+    max-width: 960px;
+  }
+  .cover-container {
     max-width: 960px;
   }
   .projects {
@@ -818,6 +832,9 @@ template {
   .cover {
     padding: 50px 0 0 0;
     height: 700px;
+  }
+  .cover-container {
+    max-width: 700px;
   }
   .cover__back {
     position: absolute;
@@ -946,15 +963,18 @@ template {
   }
   .cover-wrapper {
     width: 600px;
+    height: 550px;
   }
   .cover__back {
     left: 0;
     right: 200px;
     transform: translateX(20px);
   }
-  .cover .swiper-pagination-bullet {
-    max-width: 120px;
-    transform: translateX(-60%);
+  .cover .swiper-pagination {
+    display: none;
+  }
+  .projects {
+    padding: 0 0 160px 0;
   }
   .projects .card {
     position: relative;
@@ -1014,5 +1034,55 @@ template {
   }
   .stages .card-stages-right {
     min-height: 390px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 300px;
+  }
+  .cover .swiper-pagination-bullet {
+    max-width: 96px;
+    transform: translateX(-120%);
+  }
+  .projects .card {
+    padding: 15px;
+  }
+  .projects .card__tittle {
+    font-size: 48px;
+  }
+  .projects .card-insea__image {
+    left: 15px;
+  }
+  .projects .card-sheridan__image {
+    max-width: 254px;
+    max-height: 124px;
+  }
+  .projects .card-winestyle__image {
+    max-width: 266px;
+    max-height: 158px;
+    left: 15px;
+  }
+  .about-links {
+    flex-wrap: wrap;
+    width: 200px;
+  }
+  .about-links__item {
+    margin: 0 30px 30px 0;
+  }
+  .stages .card {
+    padding: 15px;
+  }
+  .stages .card__name {
+    max-width: 275px;
+    word-wrap: break-word;
+  }
+  .footer {
+    padding: 0 0 30px 0;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+  .footer__text {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

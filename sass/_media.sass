@@ -1,6 +1,9 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .cover
+        &-container
+            max-width: 960px
     .projects
         padding: 100px 0
         &-wrapper
@@ -20,6 +23,8 @@
     .container
         max-width: 700px
     .cover
+        &-container
+            max-width: 700px
         padding: 50px 0 0 0
         height: 700px
         &__back
@@ -124,15 +129,15 @@
     .cover
         &-wrapper
             width: 600px
+            height: 550px
         &__back
             left: 0
             right: 200px
             transform: translateX(20px)
         .swiper-pagination
-            &-bullet
-                max-width: 120px
-                transform: translateX(-60%)
+            display: none
     .projects
+        padding: 0 0 160px 0
         &-wrapper
         .card
             position: relative
@@ -181,4 +186,47 @@
                     min-height: 390px
                 &-right
                     min-height: 390px
+@media (max-width: 375px)
+    .container
+        max-width: 300px
+    .cover
+        .swiper-pagination
+            &-bullet
+                max-width: 96px
+                transform: translateX(-120%)
+    .projects
+        .card
+            padding: 15px
+            &__tittle
+                font-size: 48px
+            &-insea
+                &__image
+                    left: 15px
+            &-sheridan
+                &__image
+                    max-width: 254px
+                    max-height: 124px
+            &-winestyle
+                &__image
+                    max-width: 266px
+                    max-height: 158px
+                    left: 15px
+    .about
+        &-links
+            flex-wrap: wrap
+            width: 200px
+            &__item
+                margin: 0 30px 30px 0
+    .stages
+        .card
+            padding: 15px
+            &__name
+                max-width: 275px
+                word-wrap: break-word
+    .footer
+        padding: 0 0 30px 0
+        &__link
+            font-size: 12px
+        &__text
+            font-size: 12px
 
