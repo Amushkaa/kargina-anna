@@ -807,7 +807,6 @@ template {
 }
 
 .choice {
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -830,6 +829,7 @@ template {
 }
 .choice-wrapper {
   margin: 0 0 0 356px;
+  min-height: 90vh;
 }
 .choice-line {
   display: flex;
@@ -901,6 +901,9 @@ template {
   .card-stages-right {
     width: 470px;
     margin: 0 0 25px 0;
+  }
+  .choice {
+    min-height: 700px;
   }
   .choice-container {
     max-width: 960px;

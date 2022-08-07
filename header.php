@@ -13,13 +13,13 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <a href="#" class="logo">
+                <a href="/index.html" class="logo">
                     <span class="logo__job">Web Designer</span>
                     <span class="logo__name">Anna Kargina</span>
                 </a>
                 <div class="header-right">
                 <ul class="header-menu">
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Проекты</a></li>
+                <li class="header-menu__item"><a href="/projects.php" class="header-menu__link">Проекты</a></li>
                 <li class="header-menu__item"><a href="#" class="header-menu__link">Инфо</a></li>
                 <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
                 </ul>
