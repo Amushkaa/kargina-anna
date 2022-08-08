@@ -20,11 +20,10 @@
                 width: 470px
                 margin: 0 0 25px 0
     .choice
-        min-height: 700px
-        &-container
-            max-width: 960px
+        &-volume
+            width: 960px
         &-wrapper
-            margin: 0
+            margin: 100px auto 100px 0
         &__image
             display: none
         &__tittle
@@ -33,8 +32,8 @@
     .container
         max-width: 700px
     .choice
-        &-container
-            max-width: 700px
+        &-volume
+            width: 700px
     .cover
         &-container
             max-width: 700px
@@ -113,6 +112,8 @@
         &-links
             margin-top: 50px    
     .stages
+        &__tittle
+          animation: marquee 10s infinite linear  
         .card
             &-stages
                 &-left
@@ -120,16 +121,14 @@
                 &-right
                     min-width: 100%
     .choice
-        &-wrapper
-            margin: 0
         &__image
             display: none
 @media (max-width: 768px)
     .container
         max-width: 576px
     .choice
-        &-container
-            max-width: 576px
+        &-volume
+            max-width: inherit
         &__arrow
             display: none
         &-line
@@ -179,8 +178,6 @@
     .container
         max-width: 92%
     .choice
-        &-container
-            max-width: 92%
         &__tittle
             word-wrap: break-word
     .header
@@ -241,6 +238,8 @@
                     left: 25px
                     bottom: 88px
     .stages
+        &__tittle
+          animation: marquee 5s infinite linear
         .card
             &-stages
                 &-left
@@ -279,6 +278,8 @@
             &__item
                 margin: 0 30px 30px 0
     .stages
+        &__tittle
+          animation: marquee 3s infinite linear
         .card
             padding: 15px
             &__name

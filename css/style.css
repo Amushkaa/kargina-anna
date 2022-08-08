@@ -480,6 +480,9 @@ template {
   width: 600px;
   height: 300px;
 }
+.cover .swiper-slide__image {
+  width: inherit;
+}
 
 .swiper-pagination {
   position: absolute;
@@ -810,10 +813,14 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  min-height: 90vh;
 }
 .choice-container {
   max-width: 1200px;
   margin: auto;
+}
+.choice-volume {
+  width: 1200px;
 }
 .choice__arrow {
   opacity: 0;
@@ -829,7 +836,6 @@ template {
 }
 .choice-wrapper {
   margin: 0 0 0 356px;
-  min-height: 90vh;
 }
 .choice-line {
   display: flex;
@@ -902,14 +908,11 @@ template {
     width: 470px;
     margin: 0 0 25px 0;
   }
-  .choice {
-    min-height: 700px;
-  }
-  .choice-container {
-    max-width: 960px;
+  .choice-volume {
+    width: 960px;
   }
   .choice-wrapper {
-    margin: 0;
+    margin: 100px auto 100px 0;
   }
   .choice__image {
     display: none;
@@ -922,8 +925,8 @@ template {
   .container {
     max-width: 700px;
   }
-  .choice-container {
-    max-width: 700px;
+  .choice-volume {
+    width: 700px;
   }
   .cover-container {
     max-width: 700px;
@@ -1022,14 +1025,15 @@ template {
   .about-links {
     margin-top: 50px;
   }
+  .stages__tittle {
+    -webkit-animation: marquee 10s infinite linear;
+            animation: marquee 10s infinite linear;
+  }
   .stages .card-stages-left {
     min-width: 100%;
   }
   .stages .card-stages-right {
     min-width: 100%;
-  }
-  .choice-wrapper {
-    margin: 0;
   }
   .choice__image {
     display: none;
@@ -1039,8 +1043,8 @@ template {
   .container {
     max-width: 576px;
   }
-  .choice-container {
-    max-width: 576px;
+  .choice-volume {
+    max-width: inherit;
   }
   .choice__arrow {
     display: none;
@@ -1099,9 +1103,6 @@ template {
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 92%;
-  }
-  .choice-container {
     max-width: 92%;
   }
   .choice__tittle {
@@ -1181,6 +1182,10 @@ template {
     left: 25px;
     bottom: 88px;
   }
+  .stages__tittle {
+    -webkit-animation: marquee 5s infinite linear;
+            animation: marquee 5s infinite linear;
+  }
   .stages .card-stages-left {
     min-height: 390px;
   }
@@ -1220,6 +1225,10 @@ template {
   }
   .about-links__item {
     margin: 0 30px 30px 0;
+  }
+  .stages__tittle {
+    -webkit-animation: marquee 3s infinite linear;
+            animation: marquee 3s infinite linear;
   }
   .stages .card {
     padding: 15px;
