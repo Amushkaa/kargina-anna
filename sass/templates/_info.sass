@@ -1,4 +1,5 @@
 .info
+    overflow: hidden
     &-wrapper
         margin: 115px auto 120px 0
         display: flex
@@ -20,9 +21,8 @@
             z-index: -1
             left: -300px
             top: 260px
-            overflow: hidden
         &-right
-            width: 700px
+            max-width: 700px
             display: flex
             flex-direction: column
     &-header
@@ -36,7 +36,7 @@
     &-text
         margin-bottom: 80px
         &-contacts
-            margin: 0 316px 0 0
+            margin: 0 130px 0 0
         &__line
             display: flex
             justify-content: space-between
@@ -107,3 +107,8 @@
     &-info
         &__link 
             opacity: 0
+            color: inherit
+            text-decoration: none
+            font-weight: 400
+            font-size: 16px
+            cursor: pointer

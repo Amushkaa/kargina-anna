@@ -28,6 +28,13 @@
             display: none
         &__tittle
             margin-left: 0px
+    .info
+        &-text
+            &-contacts
+                margin: 0 150px 0 0
+        &-wrapper
+            &-right
+                max-width: 516px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -123,6 +130,37 @@
     .choice
         &__image
             display: none
+    .info
+        &-wrapper
+            flex-direction: column
+            &__photo
+                width: 219px
+                height: 299px
+                top: 660px
+                left: auto
+                right: 0
+            &__back
+                font-size: 400px
+                left: auto
+                right: -100px
+                top: 580px
+            &-right
+                max-width: 600px
+        &-header
+            max-width: 600px
+            margin-bottom: 80px
+        &-text
+            &-wrapper
+                &-bottom
+                    flex-direction: column
+            &-contacts
+                margin: 0 250px 0 0
+            &__simple
+                max-width: 600px
+    .footer
+        &-info
+            &__link
+                opacity: 1
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -173,6 +211,12 @@
                         z-index: 100
             &__item
                 margin-bottom: 20px
+    .info
+        &-wrapper
+            &__photo
+                top: 700px
+            &__back
+                top: 620px
 
 @media (max-width: 576px)
     .container
@@ -246,6 +290,17 @@
                     min-height: 390px
                 &-right
                     min-height: 390px
+    .info
+        &-wrapper
+            &__photo
+                top: 750px
+            &__back
+                top: 670px
+            &-right
+                max-width: 100%
+        &-text
+            &__line
+                max-width: 100%
 @media (max-width: 375px)
     .container
         max-width: 300px
@@ -291,4 +346,24 @@
             font-size: 12px
         &__text
             font-size: 12px
-
+    .info
+        &-wrapper
+            margin-bottom: 60px
+            &-right
+                max-width: 100%
+                padding-bottom: 350px
+            &__back
+                top: 850px
+                font-size: 600px
+                right: -250px
+            &__photo
+                left: 0
+                top: auto
+                bottom: 20px
+        &-text
+            &__line
+                max-width: 100%
+    .footer
+        &-info
+            &__link
+                font-size: 12px
