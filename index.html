@@ -19,8 +19,8 @@
                 </a>
                 <div class="header-right">
                 <ul class="header-menu">
-                <li class="header-menu__item"><a href="/projects.php" class="header-menu__link">Проекты</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Инфо</a></li>
+                <li class="header-menu__item"><a href="/projects.html" class="header-menu__link">Проекты</a></li>
+                <li class="header-menu__item"><a href="/info.html" class="header-menu__link">Инфо</a></li>
                 <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
                 </ul>
             </div>
