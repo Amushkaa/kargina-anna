@@ -1,7 +1,18 @@
 .contacts
+    overflow: hidden
+    height: 90vh
     &-wrapper
         display: flex
         justify-content: space-between
+        position: relative
+        margin-bottom: 150px
+        &__back
+            position: absolute
+            font-weight: 400
+            font-size: 800px
+            line-height: 91.69%
+            left: -66px
+            bottom: -640px
         &-text
             width: 498px
             height: 172px
@@ -13,7 +24,7 @@
         font-size: 60px
         line-height: 70px
         text-transform: uppercase
-        margin: 100px auto 80px 0
+        margin: 150px auto 80px 0
     &-text
         display: flex
         flex-basis: 50%
@@ -30,21 +41,23 @@
             font-size: 16px
             line-height: 23px
     &-form
-        display: flex 
-        justify-content: space-between
-        flex-wrap: wrap
-        max-width: 423px
+        width: 423px
         color: $text-color
     &__input
         width: 100%
         margin-bottom: 30px
         border: none
+        outline: none
         border-bottom: 1px solid #8B8B8B
         padding-bottom: 10px
         padding-left: 0
+    &__input::-moz-placeholder
+        color: $text-color
+    &__input::-webkit-input-placeholder
         color: $text-color
     &-message
         width: 100%
+        outline: none
         height: 101px
         margin-bottom: 30px
         border-color: #8B8B8B
@@ -58,6 +71,7 @@
         position: relative
         background-color: $background-color
         cursor: pointer
+        align-self: flex-end
     &__button:before
         content: ''
         width: 100%
