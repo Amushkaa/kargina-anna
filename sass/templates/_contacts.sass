@@ -1,11 +1,14 @@
 .contacts
     overflow: hidden
-    height: 90vh
+    min-height: 90vh
     &-wrapper
         display: flex
         justify-content: space-between
         position: relative
         margin-bottom: 150px
+        &-button
+            display: flex
+            justify-content: flex-end
         &__back
             position: absolute
             font-weight: 400
@@ -58,7 +61,7 @@
     &-message
         width: 100%
         outline: none
-        height: 101px
+        height: 150px
         margin-bottom: 30px
         border-color: #8B8B8B
         padding: 10px
@@ -71,7 +74,6 @@
         position: relative
         background-color: $background-color
         cursor: pointer
-        align-self: flex-end
     &__button:before
         content: ''
         width: 100%

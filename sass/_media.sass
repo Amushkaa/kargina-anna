@@ -35,6 +35,10 @@
         &-wrapper
             &-right
                 max-width: 516px
+    .contacts
+        &-wrapper
+            &-text
+                width: 440px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -161,6 +165,17 @@
         &-info
             &__link
                 opacity: 1
+    .contacts
+        &-wrapper
+            flex-wrap: wrap
+            &__back
+                opacity: 0
+            &-text
+                width: 500px
+        &-form
+            order: -1
+            min-width: 100%
+            margin-bottom: 100px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -301,6 +316,14 @@
         &-text
             &__line
                 max-width: 100%
+    .contacts
+        &-header
+            font-size: 40px
+            line-height: 47px
+            margin-top: 100px
+            margin-bottom: 40px
+        &-form
+            margin-bottom: 80px
 
 @media (max-width: 466px)
     .container
@@ -316,6 +339,19 @@
         &-text
             &__line
                 max-width: 100%
+    .contacts
+        &-wrapper
+            margin-bottom: 80px
+            &-text
+                width: 183px
+                height: auto
+            &__back
+                opacity: 1
+                right: -220px
+                left: auto
+                font-size: 500px
+                transform: matrix(-1, 0, 0, 1, 0, 0)
+                bottom: 0px
 
 @media (max-width: 375px)
     .container
