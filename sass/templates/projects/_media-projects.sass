@@ -49,6 +49,29 @@
                     &-left
                         padding: 60px 20px 60px 20px
                         margin-right: 25px
+            &-insea
+                &-block-1
+                    &-left
+                        overflow: hidden
+                        margin-right: 25px
+                    &-right
+                        padding: 60px 20px 60px 20px
+                &-block-2
+                    &-left
+                        padding: 33px 20px 33px 20px
+                    &-right
+                        height: auto
+                        overflow: hidden
+                &-block-4
+                    &-left
+                        overflow: hidden
+                        margin-right: 25px
+                    &-right
+                        padding: 60px 20px 60px 20px
+                &-block-5
+                    overflow: hidden
+                    &-left
+                        margin-right: 25px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -66,7 +89,10 @@
                         margin-right: 0
                     &-right-2
                         display: none
-
+            &-insea
+                &-block-3
+                    &__image-1
+                        margin: auto
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -131,7 +157,29 @@
                     margin-bottom: 25px
                 &-block-4
                     overflow: hidden
-
+            &-insea
+                &-block-1
+                    flex-direction: column
+                    overflow: hidden
+                    margin-bottom: 25px
+                    &-left
+                        order: 2
+                    &-right
+                        margin-bottom: 25px
+                &-block-2
+                    margin-bottom: 25px
+                &-block-3
+                    overflow: hidden
+                    margin-bottom: 25px
+                    &__image-1
+                        margin-left: 20px
+                &-block-4
+                    flex-direction: column
+                    overflow: hidden
+                    margin-bottom: 25px
+                    &-left
+                        order: 2
+                        margin-top: 25px
             &-text
                 flex-direction: column
         &-line
@@ -170,7 +218,31 @@
                         margin-bottom: 25px
                     &-right
                         width: 100%
-
+            &-insea
+                &-block-1
+                    &-right
+                        align-items: flex-start
+                &-block-2
+                    flex-direction: column
+                    &-left
+                        width: 100%
+                        margin-bottom: 25px
+                    &-right
+                        width: 100%
+                        overflow: hidden
+                &-block-3
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    min-height: auto
+                    &__image-1
+                        width: 90%
+                        height: 90%
+                        margin: 50px auto 50px auto
+                &-block-4
+                    &-right
+                        width: 100%
+                        justify-content: flex-start                    
 @media (max-width: 375px)
     .container
         max-width: 300px
