@@ -1157,6 +1157,9 @@ template {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
 }
 .contacts__button:before {
   content: "";
@@ -1639,6 +1642,76 @@ template {
 }
 .internal-wrapper-insea-block-5-right__image-2 {
   margin-top: 25px;
+}
+
+.internal-wrapper-sheridan-block-1 {
+  margin-bottom: 25px;
+}
+.internal-wrapper-sheridan-block-1-left {
+  width: 575px;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-sheridan-block-1-left__image-2 {
+  margin-top: 60px;
+}
+.internal-wrapper-sheridan-block-1-right {
+  width: 600px;
+}
+.internal-wrapper-sheridan-block-2 {
+  margin-bottom: 25px;
+  background-image: url(../img/internal/sheridan-13.png);
+  padding: 40px 120px 40px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.internal-wrapper-sheridan-block-2__image-2 {
+  height: 270px;
+  align-self: center;
+}
+.internal-wrapper-sheridan-block-3 {
+  margin-bottom: 25px;
+}
+.internal-wrapper-sheridan-block-3-left {
+  width: 575px;
+}
+.internal-wrapper-sheridan-block-3-right {
+  width: 600px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-sheridan-block-3-right__image-2 {
+  margin-left: 40px;
+}
+.internal-wrapper-sheridan-block-4 {
+  background-color: #F8F8F8;
+  min-height: 627px;
+  padding: 60px 130px 60px 60px;
+}
+.internal-wrapper-sheridan-block-4-left {
+  width: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-sheridan-block-4-left__image-2 {
+  margin-top: 60px;
+}
+.internal-wrapper-sheridan-block-4-right {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-sheridan-block-4-right__image-2 {
+  margin-top: 69px;
 }
 
 @media (max-width: 1200px) {
