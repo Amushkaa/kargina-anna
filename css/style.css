@@ -1153,6 +1153,10 @@ template {
   position: relative;
   background-color: #FFFFFF;
   cursor: pointer;
+  color: #171717;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .contacts__button:before {
   content: "";
