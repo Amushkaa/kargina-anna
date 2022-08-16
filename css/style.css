@@ -14,6 +14,12 @@ body {
   margin: auto;
 }
 
+img {
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: crisp-edges;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1065,11 +1071,6 @@ template {
   position: relative;
   margin-bottom: 150px;
 }
-.contacts-wrapper-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .contacts-wrapper__back {
   position: absolute;
   font-weight: 400;
@@ -1114,14 +1115,17 @@ template {
   font-size: 16px;
   line-height: 23px;
 }
-.contacts-form {
+
+.form {
   width: 423px;
   color: #171717;
 }
-.contacts-form__header {
-  margin-bottom: 10px;
+.form-wrapper-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.contacts__input {
+.form__input {
   width: 100%;
   margin-bottom: 30px;
   border: none;
@@ -1131,28 +1135,32 @@ template {
   padding-bottom: 10px;
   padding-left: 0;
 }
-.contacts__input::-moz-placeholder {
+.form__input__error {
+  border-bottom: 1px solid red;
+}
+.form__input::-moz-placeholder {
   color: #171717;
   opacity: 1;
 }
-.contacts__input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   color: #171717;
 }
-.contacts-message {
+.form__message {
   border-radius: 0;
   width: 100%;
   outline: none;
   height: 150px;
+  margin-top: 10px;
   margin-bottom: 30px;
   border: 1px solid #8B8B8B;
   padding: 10px;
   resize: none;
 }
-.contacts__agreement {
+.form__agreement {
   font-size: 12px;
   width: 230px;
 }
-.contacts__button {
+.form__button {
   border: none;
   padding: 0 0 2px 0;
   position: relative;
@@ -1166,7 +1174,7 @@ template {
   font-size: 16px;
   line-height: 23px;
 }
-.contacts__button:before {
+.form__button:before {
   content: "";
   width: 100%;
   height: 1px;
@@ -1178,7 +1186,7 @@ template {
   transition: transform 0.25s;
   transform-origin: left;
 }
-.contacts__button:hover:before {
+.form__button:hover:before {
   transform: scaleX(0);
   transition: transform 0.25s;
   transform-origin: left;
@@ -1275,8 +1283,14 @@ template {
   justify-content: center;
   align-items: center;
 }
+.internal-wrapper-luxoft-block-1-left__image-1 {
+  max-width: 454px;
+  max-height: 233px;
+}
 .internal-wrapper-luxoft-block-1-left__image-2 {
   margin-top: 60px;
+  max-width: 429px;
+  max-height: 214px;
 }
 .internal-wrapper-luxoft-block-1-right {
   width: 600px;
