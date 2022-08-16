@@ -1715,6 +1715,77 @@ template {
   margin-top: 69px;
 }
 
+.internal-wrapper-globe-block-1 {
+  margin-bottom: 25px;
+}
+.internal-wrapper-globe-block-1-left {
+  width: 575px;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-globe-block-1-left__image-2 {
+  margin-top: 60px;
+}
+.internal-wrapper-globe-block-1-right {
+  width: 600px;
+}
+.internal-wrapper-globe-block-2 {
+  margin-bottom: 25px;
+}
+.internal-wrapper-globe-block-2-left {
+  width: 575px;
+}
+.internal-wrapper-globe-block-2-left__image-2 {
+  margin-top: 25px;
+}
+.internal-wrapper-globe-block-2-right {
+  width: 600px;
+}
+.internal-wrapper-globe-block-2-right__image-2 {
+  margin-top: 25px;
+}
+.internal-wrapper-globe-block-3 {
+  margin-bottom: 25px;
+}
+.internal-wrapper-globe-block-3-left {
+  width: 575px;
+}
+.internal-wrapper-globe-block-3-right {
+  width: 600px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-globe-block-3-right__image-2 {
+  margin-left: 40px;
+}
+.internal-wrapper-globe-block-4 {
+  margin-bottom: 25px;
+  min-height: 504px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+}
+.internal-wrapper-globe-block-4__image-2 {
+  height: 342px;
+  margin-left: 164px;
+}
+.internal-wrapper-globe-block-5-left {
+  width: 575px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internal-wrapper-globe-block-5-right {
+  width: 600px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1772,6 +1843,36 @@ template {
     margin-right: 50px;
   }
   .internal-wrapper-sheridan-block-4-right {
+    overflow: hidden;
+  }
+  .internal-wrapper-globe-block-1-left {
+    margin-right: 25px;
+    padding: 60px 20px 60px 20px;
+  }
+  .internal-wrapper-globe-block-1-right {
+    overflow: hidden;
+  }
+  .internal-wrapper-globe-block-2 {
+    overflow: hidden;
+  }
+  .internal-wrapper-globe-block-2-left {
+    margin-right: 25px;
+  }
+  .internal-wrapper-globe-block-3-right {
+    padding: 60px 20px 60px 20px;
+    margin-left: 25px;
+  }
+  .internal-wrapper-globe-block-3-left {
+    overflow: hidden;
+  }
+  .internal-wrapper-globe-block-4__image-2 {
+    margin-left: 50px;
+  }
+  .internal-wrapper-globe-block-5-left {
+    margin-right: 25px;
+    padding: 60px 20px 60px 20px;
+  }
+  .internal-wrapper-globe-block-5-right {
     overflow: hidden;
   }
   .internal-wrapper-winestyle-block-1-right {
@@ -1855,6 +1956,13 @@ template {
     width: 20%;
     height: 20%;
   }
+  .internal-wrapper-globe-block-4__image-1 {
+    width: 60%;
+  }
+  .internal-wrapper-globe-block-4__image-2 {
+    width: 20%;
+    height: 20%;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1933,6 +2041,49 @@ template {
   }
   .internal-wrapper-sheridan-block-4 {
     overflow: hidden;
+  }
+  .internal-wrapper-globe-block-1 {
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  .internal-wrapper-globe-block-1-left {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .internal-wrapper-globe-block-2 {
+    margin-bottom: 25px;
+  }
+  .internal-wrapper-globe-block-3 {
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  .internal-wrapper-globe-block-3-right {
+    order: -1;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+  .internal-wrapper-globe-block-4 {
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  .internal-wrapper-globe-block-4__image-1 {
+    margin-bottom: 25px;
+    width: 80%;
+  }
+  .internal-wrapper-globe-block-4__image-2 {
+    margin-left: 0;
+    display: none;
+  }
+  .internal-wrapper-globe-block-5 {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .internal-wrapper-globe-block-5-left {
+    margin-bottom: 25px;
+    width: 100%;
   }
   .internal-wrapper-winestyle-block-1 {
     flex-direction: column;
@@ -2044,6 +2195,20 @@ template {
   }
   .internal-wrapper-sheridan-block-4-left {
     justify-content: flex-start;
+  }
+  .internal-wrapper-globe-block-1-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .internal-wrapper-globe-block-3-right {
+    justify-content: flex-start;
+  }
+  .internal-wrapper-globe-block-4 {
+    align-items: flex-start;
+  }
+  .internal-wrapper-globe-block-4__image-1 {
+    width: 500px;
+    margin-left: 20px;
   }
   .internal-wrapper-winestyle-block-1-right {
     overflow: hidden;

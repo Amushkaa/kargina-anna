@@ -49,6 +49,32 @@
                         margin-right: 50px
                     &-right
                         overflow: hidden
+            &-globe
+                &-block-1
+                    &-left
+                        margin-right: 25px
+                        padding: 60px 20px 60px 20px
+                    &-right
+                        overflow: hidden
+                &-block-2
+                    overflow: hidden
+                    &-left
+                        margin-right: 25px
+                &-block-3
+                    &-right
+                        padding: 60px 20px 60px 20px
+                        margin-left: 25px
+                    &-left
+                        overflow: hidden
+                &-block-4
+                    &__image-2
+                        margin-left: 50px
+                &-block-5
+                    &-left
+                        margin-right: 25px
+                        padding: 60px 20px 60px 20px
+                    &-right
+                        overflow: hidden
             &-winestyle
                 &-block-1
                     &-right
@@ -122,6 +148,14 @@
                     &__image-2
                         width: 20%
                         height: 20%
+            &-globe
+                &-block-4
+                    &__image-1
+                        width: 60%
+                    &__image-2
+                        width: 20%
+                        height: 20%
+
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -184,6 +218,40 @@
                         margin-left: 0
                 &-block-4
                     overflow: hidden
+            &-globe
+                &-block-1
+                    flex-direction: column
+                    overflow: hidden
+                    margin-bottom: 25px
+                    &-left
+                        margin-bottom: 25px
+                        width: 100%
+                &-block-2
+                    margin-bottom: 25px
+                &-block-3
+                    flex-direction: column
+                    overflow: hidden
+                    margin-bottom: 25px
+                    &-right
+                        order: -1
+                        margin-bottom: 25px
+                        margin-left: 0
+                &-block-4
+                    flex-direction: column
+                    overflow: hidden
+                    margin-bottom: 25px
+                    &__image-1
+                        margin-bottom: 25px
+                        width: 80%
+                    &__image-2
+                        margin-left: 0
+                        display: none
+                &-block-5
+                    flex-direction: column
+                    overflow: hidden
+                    &-left
+                        margin-bottom: 25px
+                        width: 100%  
             &-winestyle
                 &-block-1
                     flex-direction: column
@@ -274,6 +342,20 @@
                 &-block-4
                     &-left
                         justify-content: flex-start
+            &-globe
+                &-block-1
+                    &-left
+                        justify-content: flex-start
+                        align-items: flex-start
+                &-block-3
+                    &-right
+                        justify-content: flex-start
+                &-block-4
+                    align-items: flex-start
+                    &__image-1
+                        width: 500px
+                        margin-left: 20px
+
 
             &-winestyle
                 &-block-1
