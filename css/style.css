@@ -1067,7 +1067,8 @@ template {
 }
 .contacts-wrapper-button {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 .contacts-wrapper__back {
   position: absolute;
@@ -1146,6 +1147,10 @@ template {
   border: 1px solid #8B8B8B;
   padding: 10px;
   resize: none;
+}
+.contacts__agreement {
+  font-size: 12px;
+  width: 230px;
 }
 .contacts__button {
   border: none;
@@ -1520,7 +1525,7 @@ template {
 .internal-wrapper-winestyle-block-2-right {
   width: 311px;
   margin-right: 25px;
-  height: 462px;
+  height: auto;
 }
 .internal-wrapper-winestyle-block-2-right__image-1 {
   -o-object-fit: cover;
@@ -1536,7 +1541,6 @@ template {
 }
 .internal-wrapper-winestyle-block-3 {
   margin-bottom: 25px;
-  min-height: 530px;
 }
 .internal-wrapper-winestyle-block-3-left {
   width: 575px;
@@ -1601,7 +1605,6 @@ template {
 }
 .internal-wrapper-insea-block-2-right {
   width: 600px;
-  height: 407px;
 }
 .internal-wrapper-insea-block-3 {
   margin-bottom: 25px;
@@ -1618,7 +1621,6 @@ template {
 }
 .internal-wrapper-insea-block-4-left {
   width: 575px;
-  height: 462px;
 }
 .internal-wrapper-insea-block-4-right {
   width: 600px;
@@ -1912,7 +1914,6 @@ template {
     padding: 33px 20px 33px 20px;
   }
   .internal-wrapper-insea-block-2-right {
-    height: auto;
     overflow: hidden;
   }
   .internal-wrapper-insea-block-4-left {
@@ -1989,6 +1990,9 @@ template {
     margin-bottom: 25px;
     width: 100%;
   }
+  .internal-wrapper-luxoft-block-1-right {
+    height: 350px;
+  }
   .internal-wrapper-luxoft-block-2 {
     flex-direction: column;
     overflow: hidden;
@@ -1999,6 +2003,9 @@ template {
     width: 100%;
     order: -1;
     margin-left: 0;
+  }
+  .internal-wrapper-luxoft-block-2-left {
+    height: 350px;
   }
   .internal-wrapper-luxoft-block-3 {
     min-height: 442px;
@@ -2016,10 +2023,19 @@ template {
     margin-bottom: 25px;
     width: 100%;
   }
+  .internal-wrapper-sheridan-block-1-right__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 350px;
+    width: 100%;
+  }
   .internal-wrapper-sheridan-block-2 {
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 25px;
+    min-height: 500px;
   }
   .internal-wrapper-sheridan-block-2__image-1 {
     margin-bottom: 25px;
@@ -2039,6 +2055,14 @@ template {
     margin-bottom: 25px;
     margin-left: 0;
   }
+  .internal-wrapper-sheridan-block-3-left__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 350px;
+    width: 100%;
+  }
   .internal-wrapper-sheridan-block-4 {
     overflow: hidden;
   }
@@ -2051,8 +2075,32 @@ template {
     margin-bottom: 25px;
     width: 100%;
   }
+  .internal-wrapper-globe-block-1-right__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    height: 350px;
+    width: 100%;
+  }
   .internal-wrapper-globe-block-2 {
     margin-bottom: 25px;
+    overflow: visible;
+  }
+  .internal-wrapper-globe-block-2-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .internal-wrapper-globe-block-2-left__image-1 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .internal-wrapper-globe-block-2-left__image-2 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .internal-wrapper-globe-block-2-right {
+    display: none;
   }
   .internal-wrapper-globe-block-3 {
     flex-direction: column;
@@ -2063,6 +2111,14 @@ template {
     order: -1;
     margin-bottom: 25px;
     margin-left: 0;
+  }
+  .internal-wrapper-globe-block-3-left__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    height: 350px;
+    width: 100%;
   }
   .internal-wrapper-globe-block-4 {
     flex-direction: column;
@@ -2079,11 +2135,19 @@ template {
   }
   .internal-wrapper-globe-block-5 {
     flex-direction: column;
-    overflow: hidden;
+    overflow: visible;
   }
   .internal-wrapper-globe-block-5-left {
     margin-bottom: 25px;
     width: 100%;
+  }
+  .internal-wrapper-globe-block-5-right {
+    width: 100%;
+    margin-right: 0;
+  }
+  .internal-wrapper-globe-block-5-right__image-1 {
+    max-width: 100%;
+    max-height: 100%;
   }
   .internal-wrapper-winestyle-block-1 {
     flex-direction: column;
@@ -2093,6 +2157,13 @@ template {
   .internal-wrapper-winestyle-block-1-left {
     order: 2;
     width: 100%;
+    height: 350px;
+  }
+  .internal-wrapper-winestyle-block-1-left__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 350px;
   }
   .internal-wrapper-winestyle-block-1-right {
     margin-left: 0;
@@ -2112,14 +2183,29 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
   .internal-wrapper-winestyle-block-2-left {
     margin-bottom: 25px;
   }
   .internal-wrapper-winestyle-block-3 {
-    min-height: 442px;
     margin-bottom: 25px;
+    overflow: visible;
+  }
+  .internal-wrapper-winestyle-block-3-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .internal-wrapper-winestyle-block-3-left__image-1 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .internal-wrapper-winestyle-block-3-left__image-2 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .internal-wrapper-winestyle-block-3-right {
+    display: none;
   }
   .internal-wrapper-winestyle-block-4 {
     overflow: hidden;
@@ -2132,11 +2218,25 @@ template {
   .internal-wrapper-insea-block-1-left {
     order: 2;
   }
+  .internal-wrapper-insea-block-1-left__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 350px;
+    width: 100%;
+  }
   .internal-wrapper-insea-block-1-right {
     margin-bottom: 25px;
   }
   .internal-wrapper-insea-block-2 {
     margin-bottom: 25px;
+  }
+  .internal-wrapper-insea-block-2-right__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: start;
+       object-position: start;
   }
   .internal-wrapper-insea-block-3 {
     overflow: hidden;
@@ -2153,6 +2253,32 @@ template {
   .internal-wrapper-insea-block-4-left {
     order: 2;
     margin-top: 25px;
+  }
+  .internal-wrapper-insea-block-4-left__image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    height: 350px;
+    width: 100%;
+  }
+  .internal-wrapper-insea-block-5 {
+    overflow: visible;
+  }
+  .internal-wrapper-insea-block-5-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .internal-wrapper-insea-block-5-left__image-1 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .internal-wrapper-insea-block-5-left__image-2 {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .internal-wrapper-insea-block-5-right {
+    display: none;
   }
   .internal-wrapper-text {
     flex-direction: column;
@@ -2241,7 +2367,9 @@ template {
   }
   .internal-wrapper-insea-block-2-right {
     width: 100%;
-    overflow: hidden;
+  }
+  .internal-wrapper-insea-block-2-right__image-1 {
+    height: 350px;
   }
   .internal-wrapper-insea-block-3 {
     display: flex;
@@ -2265,6 +2393,39 @@ template {
   }
   .container .internal-wrapper-luxoft-block-2-right {
     justify-content: flex-start;
+  }
+  .container .internal-wrapper-globe-block-2 {
+    overflow: hidden;
+  }
+  .container .internal-wrapper-globe-block-2-left__image-1 {
+    max-width: 474px;
+  }
+  .container .internal-wrapper-globe-block-2-left__image-2 {
+    max-width: 474px;
+  }
+  .container .internal-wrapper-globe-block-5 {
+    overflow: hidden;
+  }
+  .container .internal-wrapper-globe-block-5-right__image-1 {
+    max-width: 474px;
+  }
+  .container .internal-wrapper-winestyle-block-3 {
+    overflow: hidden;
+  }
+  .container .internal-wrapper-winestyle-block-3-left__image-1 {
+    max-width: 474px;
+  }
+  .container .internal-wrapper-winestyle-block-3-left__image-2 {
+    max-width: 474px;
+  }
+  .container .internal-wrapper-insea-block-5 {
+    overflow: hidden;
+  }
+  .container .internal-wrapper-insea-block-5-left__image-1 {
+    max-width: 474px;
+  }
+  .container .internal-wrapper-insea-block-5-left__image-2 {
+    max-width: 474px;
   }
   .container .internal-line__tittle {
     margin: 0;
