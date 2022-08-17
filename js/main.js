@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         let error = formValidate(form);
-        let data = new FormData(form)
+        let data = new FormData(form);
 
         if (error === 0) {
           let response = await fetch('send.php', {
             method: 'POST',
-            Body: data,
+            body: data
           });
           if (response.ok){
               form.reset();

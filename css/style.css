@@ -2774,6 +2774,11 @@ template {
   .contacts-header {
     margin-top: 115px;
   }
+  .modal__dialog {
+    padding: 120px 30px;
+    width: 320px;
+    height: 320px;
+  }
 }
 @media (max-width: 576px) {
   .container {
