@@ -5,9 +5,9 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$message = htmlspecialchars($_POST['message']);
 
 // Формирование самого письма
 $title = "Сообщение с сайта-портфолио";
@@ -21,42 +21,45 @@ $body = "
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $mail->isSMTP();   
+    $mail->isSMTP();
     $mail->CharSet = "UTF-8";
-    $mail->SMTPAuth   = true;
+    $mail->SMTPAuth = true;
     $mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+    $mail->Debugoutput = function ($str, $level) {
+        $GLOBALS['status'][] = $str;
+    };
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'amushkaaaa@yandex.ru'; // Логин на почте
-    $mail->Password   = 'qeguuqqklkkucszs'; // Пароль на почте
+    $mail->Host = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username = 'amushkaaaa@yandex.ru'; // Логин на почте
+    $mail->Password = 'qeguuqqklkkucszs'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
+    $mail->Port = 465;
     $mail->setFrom('amushkaaaa@yandex.ru', 'amushkaaaa'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('ameee.am@gmail.com');  
+    $mail->addAddress('ameee.am@gmail.com');
 
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    $mail->Body = $body;
 
 // Проверяем отравленность сообщения
 
-if ($mail->send()) {
-    $result = "success";
-} else {
-    $result = "error";
+    if ($mail->send()) {
+        $result = "success";
+    } else {
+        $result = "error";
+    }
 }
 catch (Exception $e) {
-    $result = "error"
-    $status = "Error reason: {$mail->ErrorInfo}"
+    $result = "error";
+    $status = "Error reason: {$mail->ErrorInfo}";
 }
 
 $response = ["message" => $result];
-}
+/*}*/
 
 header('Content-type: application/json');
 echo json_encode($response);
