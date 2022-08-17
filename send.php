@@ -44,13 +44,19 @@ try {
     $mail->Body = $body;    
 
 // Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
-else {$result = "error";}
 
-} catch (Exception $e) {
+if ($mail->send()) {
+    $result = "success";
+} else {
     $result = "error";
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+}
+catch (Exception $e) {
+    $result = "error"
+    $status = "Error reason: {$mail->ErrorInfo}"
 }
 
-// Отображение результата
-header('Location:contacts-modal.html');
+$response = ["message" => $result];
+}
+
+header('Content-type: application/json');
+echo json_encode($response);

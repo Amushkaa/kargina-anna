@@ -1137,6 +1137,8 @@ template {
 }
 .form__input__error {
   border-bottom: 1px solid red;
+  -webkit-animation: shake-bottom 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-bottom 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .form__input::-moz-placeholder {
   color: #171717;
@@ -1192,6 +1194,57 @@ template {
   transform-origin: left;
 }
 
+@-webkit-keyframes shake-bottom {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(1deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-1deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes shake-bottom {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(1deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-1deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+}
+.modal {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal--visible {
+  visibility: visible;
+  opacity: 1;
+}
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1200,12 +1253,6 @@ template {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  visibility: hidden;
-  opacity: 0;
-}
-.modal__overlay--visible {
-  visibility: visible;
-  opacity: 1;
 }
 .modal__dialog {
   border: 1px solid #171717;
@@ -1219,12 +1266,6 @@ template {
   max-width: 400px;
   max-height: 400px;
   transform: translate(-50%, -50%);
-  visibility: hidden;
-  opacity: 0;
-}
-.modal__dialog--visible {
-  visibility: visible;
-  opacity: 1;
 }
 .modal__close {
   position: absolute;
@@ -2654,10 +2695,13 @@ template {
   .contacts-wrapper-text {
     width: 500px;
   }
-  .contacts-form {
+  .form-wrapper {
     order: -1;
     min-width: 100%;
     margin-bottom: 100px;
+  }
+  .form {
+    width: auto;
   }
 }
 @media (max-width: 768px) {
@@ -2840,7 +2884,7 @@ template {
     margin-top: 100px;
     margin-bottom: 40px;
   }
-  .contacts-form {
+  .form-wrapper {
     margin-bottom: 80px;
   }
 }

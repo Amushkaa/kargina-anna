@@ -61,6 +61,7 @@
         padding-left: 0
         &__error
             border-bottom: 1px solid red
+            animation: shake-bottom 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
     &__input::-moz-placeholder
         color: $text-color
         opacity: 1
@@ -107,3 +108,28 @@
         transform: scaleX(0)
         transition: transform 0.25s
         transform-origin: left
+
+@keyframes shake-bottom 
+  0%,
+  100% 
+    transform: rotate(0deg)
+    transform-origin: 50% 100%
+  
+  10% 
+    transform: rotate(1deg)
+  
+  20%,
+  40%,
+  60% 
+    transform: rotate(-1deg)
+  
+  30%,
+  50%,
+  70% 
+    transform: rotate(1deg)
+  
+  80% 
+    transform: rotate(-1deg)
+  
+  90% 
+    transform: rotate(1deg)

@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
             method: 'POST',
           });
           if (response.ok){
-            let result = formSuccess(modal);
-          }else{
-
+              form.reset();
+              formSuccess()
+          } else{
+              alert('Ошибка, попробуйте позднее')
           }
-
         } else {
           alert('Пожалуйста, заполните обязательные поля')
         }
@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
+        return error
     }
     function formAddError(input) {
         input.classList.add("form__input__error");
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
-    function formSuccess(modal) {
-      document.querySelector(".modal").add("--visible");
+    function formSuccess() {
+        document.querySelector(".modal").classList.add("modal--visible");
     }
 })
